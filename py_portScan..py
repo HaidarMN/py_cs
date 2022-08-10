@@ -4,10 +4,10 @@ def conScan(host, port) :
     try:
         conn = socket(AF_INET, SOCK_STREAM)
         conn.connect((host, port))
-        print("[+]%d/tcp open" % port)
+        print("[+] %d / tcp open" % port)
         conn.close()
     except:
-        print("[-]%d/tcp closed" % port)
+        print("[-] %d / tcp closed" % port)
 
 def portScan(host, ports):
     try:
